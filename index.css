@@ -8,6 +8,7 @@ body{
     font-family: sans-serif;
 }
 .container{
+    margin : auto;
     display: flex;
     flex-direction: row;  
     width: 100%; 
