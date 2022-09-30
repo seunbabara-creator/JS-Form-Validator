@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Get Started</title>
+        <link rel="stylesheet" href="index.css"/>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+           <div id="deco.">
+               <img src="20220809_195651_0000.png" alt="flyer" id="flyer">
+           </div>
+           <div id="conform">
+            <form id="myform" onsubmit="validateForm();validateForm2();validateForm3(); return false;" >
+                <div class="title"> Place your Order</div>
+                <div>
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" placeholder="John Doe" >
+                  <div id="errordiv1">
+                  </div>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="johndoe@example.com">
+                  <div id="errordiv2">
+                  </div>
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" placeholder="Your New Password">
+                  <div id="errordiv3">
+                  </div>
+                </div>
+                <button id="btn" type="submit">Submit</button>
+            </form>
+           </div>
+        </div>
+    </body>
+</html>

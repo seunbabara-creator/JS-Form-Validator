@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;  
+    width: 100%; 
+}
+#flyer{
+    width: 430px;
+    height: 530px;
+}
+#deco{
+  padding:50px ; 
+  margin: 15px; 
+  margin-bottom: 18px;
+}
+#conform{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 2px 2px 4px #eed8d8;
+    padding: 50px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid rgb(241, 154, 154);
+    box-shadow: 2px 2px 4px #eed8d8;
+}
+input:focus{
+    border: 2px solid black;    
+}
+form div{
+     margin-bottom: 15px;
+     /**position: relative;because of the 
+     icons**/
+}
+button{
+    margin-top: 15px;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(241, 154, 154);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px #eed8d8;
+}
+button:hover{
+    background-color: rgb(207, 111, 111);;
+}
+/** style rules for icons
+form div{
+    position: absolute;
+    padding: 10px;/**to position the icons in the correct positions
+    (inside and outside)
+}
+.failure-icon,.error{
+    color: red; failure icon occuring with error message
+    
+}
+.sucess-icon{
+    color: green;
+}
+.error{
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+ the sucess and failure buttons would
+be overlapping at this point so:
+.sucess icon,
+.failure icon{
+    right: 0;
+    opacity: 0;  this hides them (for the
+    time being)**/
+    @media (min-width:320px)and (max-width:480px){
+        .container{
+            flex-direction: column;
+        }
+        #flyer{
+            width: 350px;
+            height: 400px;
+        }
+    }
